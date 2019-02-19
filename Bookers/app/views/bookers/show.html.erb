@@ -1,0 +1,8 @@
+<h2>Book was successfully created.</h2>
+<h2>Title</h2>
+<p><%= bookers.title %></p>
+<h2>Body</h2>
+<p><%= @bookers.body %></p>
+
+<%= link_to "Edit", edit_bookers_path(@books.id) %>
+<%= link_to "Back", index_bookers_path(@books.id) %>

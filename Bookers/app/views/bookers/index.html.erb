@@ -1,0 +1,11 @@
+<h1>Books</h1>
+ <% @bookers.each do |post| %>
+ <%= link_to "Show", show_bookers_path(@bookers.id) %>
+ <%= link_to "Edit", edit_bookers_path(@books.id) %>
+ <%= link_to "Destroy", destroy_bookers_path(@bookers.id), method: :delete, "data-confirm" => "Are you sure？" %>
+ <h2>New book</h2>
+    <p>Title</p>
+     <p>Body</p>
+    <span><%=link_to bookers.title, "/bookers/#{bookers.id}" %></span>
+
+ <% end %>
